@@ -1,0 +1,12 @@
+<table>
+<tr>
+  <th>Name</th>
+  <th>Soup Base</th>
+</tr>
+<% @ramen_types.each do |ramen_type| %>
+<tr>
+  <td><%= ramen_type["name"] %></td>
+  <td><%= ramen_type["soup_base"] %></td>
+</tr>
+<% end %>
+</table>

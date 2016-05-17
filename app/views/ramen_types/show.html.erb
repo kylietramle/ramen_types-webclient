@@ -1,8 +1,8 @@
-<p>Ramen Name</p><%= @ramen_type["name"] %>
-<p>Soup Base </p><%= @ramen_type["soup_base"] %>
-<p>Soup Base </p><%= @ramen_type["flavor"] %>
-<p>Soup Base </p><%= @ramen_type["broth_color"] %>
-<p>Soup Base </p><%= @ramen_type["other_ingredients"] %>
+<p>Ramen Name</p><%= @ramen_type.name %>
+<p>Soup Base </p><%= @ramen_type.soup_base %>
+<p>Soup Base </p><%= @ramen_type.flavor %>
+<p>Soup Base </p><%= @ramen_type.broth_color %>
+<p>Soup Base </p><%= @ramen_type.other_ingredients%>
 
-<%= link_to "Edit", "/ramen_types/#{@ramen_type['id']}/edit" %>
-<%= link_to "Delete", "/ramen_types/#{@ramen_type['id']}", method: :delete %>
+<%= link_to "Edit", "/ramen_types/#{@ramen_type.id}/edit" %>
+<%= link_to "Delete", "/ramen_types/#{@ramen_type.id}", method: :delete %>

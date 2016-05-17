@@ -5,8 +5,10 @@
 </tr>
 <% @ramen_types.each do |ramen_type| %>
 <tr>
-  <td><%= ramen_type["name"] %></td>
-  <td><%= ramen_type["soup_base"] %></td>
-</tr>
+  <td><%= ramen_type.name %></td>
+  <td><%= ramen_type.soup_base %></td>
+  <td><%= ramen_type.flavor %></td>
+  <td><%= ramen_type.broth_color %></td>
+  <td><%= ramen_type.other_ingredients %></td>
 <% end %>
 </table>

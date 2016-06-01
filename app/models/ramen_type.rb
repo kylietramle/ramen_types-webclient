@@ -16,11 +16,11 @@ class RamenType
   end
 
   def self.all
-    ramen_types_array = Unirest.get("#{ENV['API']}.json").body
+    ramen_types_array = Unirest.get("#{ENV['API']}.json", headers:{"Accept" => "application/json", "Authorization" => "Token token=#{ENV['TOKEN']}", "X-User-Email" => ENV['EMAIL']}).body
 
-    ramen_types = []
-    ramen_types_array.each do |hash|
-      ramen_types << RamenType.new(hash)
+    ramen_types = [] do |hash|
+      ramen_types << RamenTy
+    ramen_types_array.eachpe.new(hash)
     end
 
     ramen_types
